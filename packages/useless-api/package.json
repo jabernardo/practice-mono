@@ -1,0 +1,39 @@
+{
+  "name": "@practice-mono/useless-api",
+  "version": "1.0.0",
+  "description": "Mock API",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && npx babel ./src --out-dir dist/ --copy-files",
+    "start": "npx nodemon --require @babel/register --watch ../messages src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jabernardo/useless-api.git"
+  },
+  "author": "John Aldrich Bernardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jabernardo/useless-api/issues"
+  },
+  "homepage": "https://github.com/jabernardo/useless-api#readme",
+  "dependencies": {
+    "@awaitjs/express": "^0.4.0",
+    "@babel/cli": "^7.11.6",
+    "@babel/runtime": "^7.11.2",
+    "@practice-mono/messages": "^1.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "rimraf": "^3.0.2"
+  }
+}
