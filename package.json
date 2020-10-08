@@ -10,7 +10,8 @@
   "scripts": {
     "test": "lerna run test",
     "new-version": "lerna version --conventional-commits --yes",
-    "diff": "lerna diff"
+    "diff": "lerna diff",
+    "start": "lerna run transpile && lerna run start --parallel"
   },
   "devDependencies": {
     "lerna": "^3.22.1"

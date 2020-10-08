@@ -5,8 +5,8 @@
   "main": "./src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf dist/ && npx babel ./src --out-dir dist/ --copy-files",
-    "start": "npx nodemon --require @babel/register --watch ../messages src/app.js"
+    "build": "npx babel ./src --out-dir dist/ --copy-files",
+    "start": "npx nodemon --require @babel/register ./src/app.js"
   },
   "repository": {
     "type": "git",
@@ -33,7 +33,6 @@
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/polyfill": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
-    "@babel/register": "^7.11.5",
-    "rimraf": "^3.0.2"
+    "@babel/register": "^7.11.5"
   }
 }
